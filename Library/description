@@ -1,0 +1,31 @@
+CCrie uma classe Livro e uma classe EstoqueLivros com os seguintes métodos:
+
+1. Classe Livro
+
+    Atributos: titulo (String), autor (String), preco (double).
+
+    Métodos: Construtor, Getters e Setters.
+
+2. Classe EstoqueLivros
+
+    Atributo: Uma lista para armazenar os livros (List<Livro>).
+
+    Método 1: adicionarLivro(Livro livro): Adiciona um livro à lista.
+
+    Método 2: obterLivroMaisBarato():
+
+        Lógica: Percorrer a lista, comparar os preços e encontrar o livro com o menor valor.
+
+        Retorno: O objeto Livro mais barato (ou null se a lista estiver vazia).
+
+    Método 3: obterLivroMaisCaro():
+
+        Lógica: Percorrer a lista, comparar os preços e encontrar o livro com o maior valor.
+
+        Retorno: O objeto Livro mais caro (ou null se a lista estiver vazia).
+
+Foco na Sintaxe e Lógica (Dicas para Evitar Erros Comuns)
+
+    Comparação Inicial: Ao buscar o mais caro/barato, comece assumindo que o primeiro elemento da lista é o seu ponto de partida (o mais caro/barato até agora).
+
+    Tratamento de Lista Vazia: Lembre-se de verificar se a lista está vazia (.isEmpty()) antes de tentar acessá-la.
