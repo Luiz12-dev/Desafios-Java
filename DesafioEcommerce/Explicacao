@@ -1,0 +1,27 @@
+Crie uma classe CalculadoraDeCompra com o seguinte método:
+
+Método: calcularValorFinal(double valorTotal, double percentualDesconto, double valorBonus, String cupom)
+
+    Objetivo: Aplicar descontos e bônus sobre o valor total da compra.
+
+    Entrada: Valor total da compra, percentual de desconto inicial, valor de bônus, e um código de cupom.
+
+    Retorno: O valor final após todas as aplicações.
+
+Regras de Negócio e Ordem de Aplicação
+
+O segredo aqui é a ordem correta dos cálculos.
+
+    Aplicação do Desconto Percentual (%): O percentualDesconto é aplicado primeiro sobre o valorTotal.
+
+    Aplicação do Cupom (Regra Exclusiva): Se o cupom for válido (ou seja, igual a "DEZOFF"), um desconto adicional de R$ 10,00 é subtraído.
+
+    Aplicação do Bônus (Último a ser Subtraído): O valorBonus é o último valor a ser subtraído do total.
+
+Foco na Sintaxe e Lógica (Dicas)
+
+    Para o cálculo de percentual, evite erros de precisão usando valorTotal * (percentual / 100.0). Lembre-se de usar 100.0 para forçar o cálculo com números decimais (double).
+
+    A lógica de if/else será crucial para verificar a validade do cupom.
+
+    O retorno deve ser sempre o valor final da compra, garantindo que nunca seja negativo (se o desconto e bônus excederem o valor, o valor final deve ser 0).
