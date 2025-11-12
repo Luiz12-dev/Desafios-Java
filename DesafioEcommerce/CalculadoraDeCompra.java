@@ -38,7 +38,9 @@ public class CalculadoraDeCompra {
 
        valorAtual -= valorBonus;
 
-         return valorAtual;
+        double valorFinal = Math.max(0,valorAtual);
+
+         return valorFinal;
 
     }
 }
