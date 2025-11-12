@@ -1,0 +1,28 @@
+Explicação Desafio:
+Crie uma classe GerenciadorAgendamento com o seguinte método:
+
+Método: verificarHorarioValido(int horaInicio, int minutoInicio, int duracaoMinutos)
+
+    Objetivo: Verificar se um agendamento proposto (duração e horário de início) está dentro do horário comercial padrão e se o horário de término não excede o limite.
+
+    Regras de Negócio:
+
+        O horário de início deve ser após 08:00 (incluso).
+
+        O horário de início deve ser antes de 17:00.
+
+        A consulta não pode terminar após 17:00.
+
+    Entrada: Hora de início, minuto de início e a duração da consulta (em minutos).
+
+    Retorno: boolean (true se o agendamento for válido, false caso contrário).
+
+Foco na Sintaxe e Lógica (Dicas)
+
+    Use LocalTime.of(hora, minuto) para criar os pontos de referência e o horário de início.
+
+    Use LocalTime.MAX ou LocalTime.of(17, 0) para definir o limite de término.
+
+    Use o método .plusMinutes() no horário de início para calcular o horário de término.
+
+    Use o método .isBefore() ou .isAfter() para as comparações.
