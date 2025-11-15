@@ -1,0 +1,23 @@
+O Problema
+
+Em um array de números inteiros, encontre o par de elementos adjacentes (ao lado um do outro) cuja multiplicação resulta no maior produto possível.
+
+Sua Missão
+
+Crie uma classe MaximoProdutoAdjacente com o seguinte método:
+
+Método: encontrarMaiorProduto(int[] arrayNumeros)
+
+    Objetivo: Percorrer o array e retornar o maior produto que pode ser obtido ao multiplicar dois números que estão em posições consecutivas.
+
+    Entrada: Um array de números inteiros (int[]). O array terá pelo menos dois elementos.
+
+    Retorno: O valor inteiro (int) do maior produto encontrado.
+
+Regras e Foco na Lógica
+
+    Você deve comparar array[i] * array[i + 1] para todo o array.
+
+    É crucial que você não compare o último elemento com algo fora do array (evite ArrayIndexOutOfBoundsException).
+
+    Você deve manter uma variável de controle (int maiorProduto) para armazenar o maior valor encontrado até o momento, atualizando-a em cada iteração.
